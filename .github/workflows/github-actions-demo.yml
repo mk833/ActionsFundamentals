@@ -2,10 +2,8 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor}} is learning GitHub Actions
 on:
   push:
-    branches:
-      - main
-    paths-ignore:
-      - ".github/*"
+    branches: [main]
+    paths-ignore: [.github/**]
   pull_request: 
     branches: [main]
   schedule: 
