@@ -11,20 +11,20 @@ on:
   schedule: 
     - cron: '15 6 * * 0'
   workflow_dispatch:
-    jobs:
-      Build:
-        runs-on: ubuntu-latest
-        steps:
+jobs:
+  Build:
+      runs-on: ubuntu-latest
+      steps:
 
-          - name: Output details
-            run: |
-              echo "This job was triggereed by event: ${{github.event_name}}"
-              echo "This branch that triggered this: ${{github.ref}}"
-              echo "This is the repository name: ${{github.repository}}"
+        - name: Output details
+          run: |
+            echo "This job was triggereed by event: ${{github.event_name}}"
+            echo "This branch that triggered this: ${{github.ref}}"
+            echo "This is the repository name: ${{github.repository}}"
 
-          - uses: actions/checkout@v4
+        - uses: actions/checkout@v4
 
-          - name: List all files in repo
-            run: |
-              echo "The repo (${{github.repository}}) contains these files:"
-              tree
+        - name: List all files in repo
+          run: |
+            echo "The repo (${{github.repository}}) contains these files:"
+            tree
