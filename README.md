@@ -1,7 +1,7 @@
 # GitHub Actions Fundamentals
 
 ## Overview
-Repo for the `GitHub Actions Fundamentals` training. This is my change to the file.
+Repo for the `GitHub Actions Fundamentals` training. This is my change to the file. NewBranch edit. 
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://avanade.github.io/code-of-conduct/)
