@@ -11,5 +11,5 @@ inputs:
   runs:
     using: 'docker'
     image: 'Dockerfile'
-    env:
-      INPUT_WHO_TO_GREET: ${{ inputs.who-to-greet }}
+    args:
+      - ${{ github.event.inputs.who-to-greet }}
