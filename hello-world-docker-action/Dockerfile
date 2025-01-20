@@ -1,11 +1,6 @@
-# Set the base image to use for subsequent instructions
+# Container image that runs your code
 FROM alpine:3.21
-
-# Set the working directory inside the container
-WORKDIR /usr/src
-
-# Copy any source file(s) required for the action
-COPY entrypoint.sh .
-
-# Configure the container to be run as an executable
-ENTRYPOINT ["/usr/src/entrypoint.sh"]
+# Copies your code file from your action repository to the filesystem path `/` of the container
+COPY entrypoint.sh /entrypoint.sh
+# Code file to execute when the docker container starts up (`entrypoint.sh`)
+ENTRYPOINT ["/entrypoint.sh"]
