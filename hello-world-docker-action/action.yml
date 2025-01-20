@@ -12,4 +12,4 @@ inputs:
     using: 'docker'
     image: 'Dockerfile'
     args:
-      - ${{ github.event.inputs.who-to-greet }}
+      - ${{ inputs.who-to-greet }}
