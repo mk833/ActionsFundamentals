@@ -58,5 +58,16 @@ body:
 
 ## Adding a new issue Form for use
 
-1. Go to **Issues** | [](/../../issues)
+1. To prepare for using the new form, we need to add a new label. Go to [labels](/../../labels) and add 'triage'.
+2. Go to **Issues** | [New Bug report](/../../issues/new?template=bug-report.yml)
+3. Fill in the bug report form and create it. Validate that you have both labels on your issue.
 
+## Adding a workflow trigger
+
+1. Open the workflow that you created for the first HOL lab, `github-actions-demo.yml`. Make a copy of this file and name it `github-issues-demo.yml`
+2. Remove any triggers, so that only `workflow-dispatch` remains
+3. Add triggers to the workflow:
+- when an issue is opened
+- when an issue is edited
+4. Save and commit your updates to main
+5. Create a new issue and navigate to the Actions tab to view your newly created workflow run. 
