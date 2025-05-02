@@ -1,4 +1,4 @@
-# 🔨 Hands-on: My first workflow
+# 🔨 Hands-on: My first IssueOps
 
 In this hands-on lab you will create your first GitHub IssueOps template and learn how you can use Issues to drive workflows. If you like more background information, please refer to the [GitHub IssueOps](https://issue-ops.github.io/docs/) pages on GitHub Docs. Good luck! 👍
 
