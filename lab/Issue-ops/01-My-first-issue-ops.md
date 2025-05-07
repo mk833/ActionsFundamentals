@@ -6,6 +6,8 @@ This lab has a pre-requisite of completing the first hands on lab [01-My-first-w
 
 This hands on lab consists of the following steps:
 - [Creating an issue form]()
+- [Adding a new issue form for use]()
+- 
 
 
 ## Creating an issue form
@@ -56,7 +58,7 @@ body:
 
 3. Save and commit your changes to the repo. If you are using a branch, merge your changes into main.
 
-## Adding a new issue Form for use
+## Adding a new issue form for use
 
 1. To prepare for using the new form, we need to add a new label. Go to [labels](/../../labels) and add 'triage'.
 2. Go to **Issues** | [New Bug report](/../../issues/new?template=bug-report.yml)
